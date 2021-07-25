@@ -1,0 +1,33 @@
+    #carouselExampleIndicators{
+        object-fit: contain;
+        max-height: 100vh;
+        overflow: hidden;
+        object-position: center;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3); ;       
+    }
+
+#imagem1{
+
+    padding: 20px;    
+    background-color:rgb(230, 230, 230);
+    border-radius: 0.4em;
+    margin: 6rem 0 2rem 0;
+}
+
+#imagem2{
+    padding: 20px;    
+    background-color:rgb(230, 230, 230);
+    border-radius: 0.4em;
+    margin: 2rem 0;
+}
+
+#imagem3{
+    padding: 20px;    
+    background-color:rgb(230, 230, 230);
+    border-radius: 0.4em;
+    margin: 2rem 0;
+}
+
+#linha1, #linha2, #linha3{
+    
+}
