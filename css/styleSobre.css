@@ -1,0 +1,15 @@
+body {
+    background-image: url(https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+
+.container-fluid {
+   
+    padding: 20px;    
+    background-color:rgb(230, 230, 230);
+    border-radius: 0.4em;
+    margin: 6rem;
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+
+}
