@@ -1,0 +1,15 @@
+    #carouselExampleIndicators{
+        object-fit: contain;
+        max-height: 100vh;
+        overflow: hidden;
+        object-position: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); ;       
+    }
+
+
+
+#imagem1{
+    padding: 20px;    
+    background-color:rgba(216, 216, 216, 0.568);
+    border-radius: 2%;
+}
