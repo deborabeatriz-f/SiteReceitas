@@ -103,3 +103,18 @@ footer img:hover {
     transform: translate(0.25rem, 0.25rem) scale(0.8);
     opacity: 1;
 }
+
+#containerMarketing {
+    margin-top: -5rem;
+}
+
+#imagem {
+    transition: ease-in-out 0.7s;
+    margin-bottom: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+#imagem:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 5px 15px rgba(29, 17, 17, 0.4);
+}
