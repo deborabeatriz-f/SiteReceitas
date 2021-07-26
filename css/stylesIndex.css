@@ -27,10 +27,14 @@ nav {
     opacity: 0.8;
 }
 
+.navbar-toggler:active {
+    transform: scale(0.9);
+}
+
 #colapsedNavbar {
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 5.5rem;
+    padding: 7.5rem;
     padding-left: 0;
     display: flex;
 }
