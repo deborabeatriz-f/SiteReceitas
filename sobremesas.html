@@ -7,15 +7,25 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.84.0">
-  <title>Carousel Template · Bootstrap v5.0</title>
+  <title>Sobremesas</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
 
 
   <!-- Bootstrap core CSS -->
+  <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
+
+
+
+  <link rel="stylesheet" href="./css/stylespp.css">
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
   <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -49,142 +59,164 @@
 
 <body>
 
-  <header>
-
-
-    <div class="card text-center">
-      <div class="card-header">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Receitas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">Sobre nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">Login</a>
-          </li>
-        </ul>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Fome de Quê? </h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-      </div>
-    </div>
-  </header>
-
   <main>
-    <!-- START THE FEATURETTES -->
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Torta de Limão
-        </h2>
-        <p class="lead">
-
-          Ingredientes(Base):
-          2 xic. Farinha de trigo,
-          1/2 xic. Açúcar,
-          Pitada de sal,
-          1/2 xic. Água,
-          1/2 xic. Óleo.
-
-          Mousse de Limão:
-          1 xic. Água quente,
-          1/2 c.c. Agar Agar (deixe ferver na água por 3 minutos),
-          1/2 xic. Açúcar,
-          1 + 1/2 xic. Leite de soja em pó/leite de coco em pó,
-          Raspas de 1 limão,
-          Suco de 2 limões.
-
-          Ingredientes Chantilly:
-          200ml Leite de coco beeeem gelado,
-          1 + 1/2 xic. Açúcar de confeiteiro,
-          1 C.S. Emulsificante (você encontra pela internet ou em lojas de confeitaria).
-
-          Raspas de limão para decorar!
-
-        </p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
-      <div class="col-md-5">
-        <iframe width="727" height="409" src="https://www.youtube.com/embed/ya4FOc5cyOg" title="YouTube video player"
-          frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carousel1">
+          <a href="#imagem1">
+            <img
+              src="./imgs/tortaLimao 1868x1200.jpg"
+              class="d-block w-100" alt="">
+          </a>
+        </div>
+
+        <div class="carousel-item" id="carousel2">
+          <a href="#imagem2">
+            <img
+              src="./imgs/paoDoce 1868x1200.jpg"
+              class="d-block w-100" alt="">
+          </a>
+        </div>
+
+        <div class="carousel-item" id="carousel3">
+          <a href="#imagem3">
+            <img
+              src="./imgs/sorvete_1868x1200.jpg"
+              class="d-block w-100" alt="">
+          </a>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Pão Doce de Mesclado de Chocolate</h2>
-        <p class="lead">
-          Massa:
-          2 + ½ (1 xícara=240 ml) xícaras de farinha de trigo,
-          ¼ de xícara (60 ml) de açúcar (qualquer açúcar serve),
-          1 colher de chá de sal,
-          1 colher de sopa rasa de fermento biológico,
-          ¼ de xícara de azeite de oliva ou outro óleo vegetal,
-          1 xícara (240 ml – use a mesma xícara que usou para medir a farinha) de leite vegetal morno ou água morna.
 
-          Recheio:
-          ¼ de xícara de farinha,
-          2 colheres de sopa de cacau em pó sem açúcar,
-          ½ xícara (120 ml) de açúcar,
-          1 colher de chá bem cheia de canela,
-          4 colheres de sopa bem cheia de margarina temperatura ambiente.
 
-          Glace:
-          ½ xícara de açúcard e confeiteiro,
-          2-4 colheres de chá de água.
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        </p>
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+
+      <!-- START THE FEATURETTES -->
+
+
+      <div id="imagem1">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Torta de Limão<span class="text-muted"> Caseira Deliciosa</span></h2>
+            <p class="lead">
+              INGREDIENTES:
+              <br>
+              2 xic. Farinha de trigo,
+              1/2 xic. Açúcar,
+              Pitada de sal,
+              1/2 xic. Água,
+              1/2 xic. Óleo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="ratio ratio-16x9">
+              <iframe width="1366" height="625" src="https://www.youtube.com/embed/ya4FOc5cyOg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 order-md-1">
-        <iframe width="727" height="409" src="https://www.youtube.com/embed/xe3RP8qyfgk" title="YouTube video player"
-          frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
 
+      <div id="imagem2">
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Pão Doce <span class="text-muted">de Mesclado de Chocolate</span></h2>
+            <p class="lead">
+              INGREDIENTES:
+              <br>
+              Massa:
+              2 + ½ (1 xícara=240 ml) xícaras de farinha de trigo,
+              ¼ de xícara (60 ml) de açúcar (qualquer açúcar serve),
+              1 colher de chá de sal,
+              1 colher de sopa rasa de fermento biológico,
+              ¼ de xícara de azeite de oliva ou outro óleo vegetal,
+              1 xícara (240 ml – use a mesma xícara que usou para medir a farinha) de leite vegetal morno ou água morna.
+              Recheio:
+              ¼ de xícara de farinha,
+              2 colheres de sopa de cacau em pó sem açúcar,
+              ½ xícara (120 ml) de açúcar,
+              1 colher de chá bem cheia de canela,
+              4 colheres de sopa bem cheia de margarina temperatura ambiente.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <div class="ratio ratio-16x9">
+              <iframe width="1366" height="625" src="https://www.youtube.com/embed/xe3RP8qyfgk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Travessa Gelada Cremosa</h2>
-        <p class="lead">
-          Ingredientes:
-          (Tamanho da minha xícara 240ml)
-          1 Caixinha de creme de leite,
-          150 ML de Agua,
-          2 1/2 Xícaras de chá de Leite em Pó,
-          1 Envelope de suco sabor abacaxi,
-          Opcional: Gotas de chocolate.
-
-        </p>
+      <div id="imagem3">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Travessa Gelada<span class="text-muted"> Cremosa</span>
+            </h2>
+            <p class="lead">
+              INGREDIENTES:
+              <br>
+              (Tamanho da minha xícara 240ml)
+              1 Caixinha de creme de leite,
+              150 ML de Agua,
+              2 1/2 Xícaras de chá de Leite em Pó,
+              1 Envelope de suco sabor abacaxi,
+              Opcional: Gotas de chocolate.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="ratio ratio-16x9">
+              <iframe width="1366" height="625" src="https://www.youtube.com/embed/4P1ht-osKa4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5">
-        <iframe width="727" height="409" src="https://www.youtube.com/embed/4P1ht-osKa4" title="YouTube video player"
-          frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </div>
+      <hr class="featurette-divider">
 
-    <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
 
-    <!-- /END THE FEATURETTES -->
+    </div><!-- /.container -->
+
 
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-
+      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
   </main>
 
