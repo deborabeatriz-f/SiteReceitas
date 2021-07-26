@@ -7,15 +7,25 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Carousel Template · Bootstrap v5.0</title>
+    <title>Saladas</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
 
 
     <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
+
+
+
+    <link rel="stylesheet" href="./css/stylespp.css">
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -49,130 +59,161 @@
 
 <body>
 
-    <header>
-
-
-        <div class="card text-center">
-            <div class="card-header">
-                <ul class="nav nav-pills card-header-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Receitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1">Login</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Fome de Quê? </h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-            </div>
-        </div>
-    </header>
-
     <main>
-        <!-- START THE FEATURETTES -->
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-
-                <h2 class="featurette-heading">Salada Vegana
-                </h2>
-                <p class="lead">
-                    Ingredientes:
-                    1 beterraba cozida e fatiada,
-                    ½ maço de brócolis cozido al dente,
-                    2 xícaras (chá) de arroz integral cozido,
-                    300 gramas de edamame,
-                    ½ abacate fatiado,
-                    Sal, azeite, vinagre, pimenta-do-reino, pimenta calabresa e cheiro-verde a gosto.
-
-                </p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class="col-md-5">
-                <iframe width="727" height="409" src="https://www.youtube.com/embed/TXM3tITsplg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="carousel1">
+                    <a href="#imagem1">
+                        <img src="https://images.pexels.com/photos/1833333/pexels-photo-1833333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="d-block w-100" alt="">
+                    </a>
+                </div>
+
+                <div class="carousel-item" id="carousel2">
+                    <a href="#imagem2">
+                        <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            class="d-block w-100" alt="">
+                    </a>
+                </div>
+
+                <div class="carousel-item" id="carousel3">
+                    <a href="#imagem3">
+                        <img src="https://images.pexels.com/photos/628777/pexels-photo-628777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="d-block w-100" alt="">
+                    </a>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
 
-        <hr class="featurette-divider">
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
 
-                <h2 class="featurette-heading">Salada Tropical</h2>
-                <p class="lead">
-                    Ingredientes:
-                    Alface picado a gosto,
-                    1 manga pequena cortada,
-                    1/2 vidro de palmito picado,
-                    2 tomates picados,
-                    cebolinha a gosto,
-                    sal a gosto,
-                    azeite,
-                    suco de limão,
-                    pimenta do reino a gosto.
 
-                </p>
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+
+            <!-- START THE FEATURETTES -->
+
+
+            <div id="imagem1">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Salada Vegana<span class="text-muted"> Completa</span></h2>
+                        <p class="lead">
+                            INGREDIENTES:
+                            <br>
+                            1 beterraba cozida e fatiada,
+                            ½ maço de brócolis cozido al dente,
+                            2 xícaras (chá) de arroz integral cozido,
+                            300 gramas de edamame,
+                            ½ abacate fatiado,
+                            Sal, azeite, vinagre, pimenta-do-reino, pimenta calabresa e cheiro-verde a gosto.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="1366" height="625" src="https://www.youtube.com/embed/TXM3tITsplg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5">
-                <iframe width="727" height="409" src="https://www.youtube.com/embed/jwC9gOHRm88"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+
+            <div id="imagem2">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Salada Tropical <span class="text-muted"> refrescante</span></h2>
+                        <p class="lead">
+                            INGREDIENTES:
+                            <br>
+                            Alface picado a gosto,
+                            1 manga pequena cortada,
+                            1/2 vidro de palmito picado,
+                            2 tomates picados,
+                            cebolinha a gosto,
+                            sal a gosto,
+                            azeite,
+                            suco de limão,
+                            pimenta do reino a gosto.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="1366" height="625" src="https://www.youtube.com/embed/jwC9gOHRm88"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Salada Carolina</h2>
-                <p class="lead">
-                    Salada:
-                    2 pés de alface-americana, cortada em tiras.
-                    5 tomates grandes e bem maduros, com pele e sementes, cortados em cubos,
-                    4 ovos cozidos, ralados na parte grossa do ralador,
-                    200 a 300 g de parmesão, ralado grosso,
-                    molho básico para salada, com mostarda.
-                    Molho: 4 colheres de azeite extravirgem,
-                    Suco de 1/2 limão,
-                    1 colher de chá de mostarda cheia,
-                    Sal e pimenta do reino a gosto.
-                </p>
+            <div id="imagem3">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Salada Carolina<span class="text-muted"> simples</span>
+                        </h2>
+                        <p class="lead">
+                            INGREDIENTES:
+                            <br>
+                            2 pés de alface-americana, cortada em tiras.
+                            5 tomates grandes e bem maduros, com pele e sementes, cortados em cubos,
+                            4 ovos cozidos, ralados na parte grossa do ralador,
+                            200 a 300 g de parmesão, ralado grosso,
+                            molho básico para salada, com mostarda.
+                            Molho: 4 colheres de azeite extravirgem,
+                            Suco de 1/2 limão,
+                            1 colher de chá de mostarda cheia,
+                            Sal e pimenta do reino a gosto.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="1366" height="625" src="https://www.youtube.com/embed/SXcnzlgRKbw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5 order-md-1">
-                <iframe width="727" height="409" src="https://www.youtube.com/embed/SXcnzlgRKbw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <hr class="featurette-divider">
 
+            <!-- /END THE FEATURETTES -->
 
-            </div>
-        </div>
+        </div><!-- /.container -->
 
-        <hr class="featurette-divider">
-
-
-
-        <!-- /END THE FEATURETTES -->
 
         <!-- FOOTER -->
         <footer class="container">
             <p class="float-end"><a href="#">Back to top</a></p>
-
+            <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
     </main>
 
