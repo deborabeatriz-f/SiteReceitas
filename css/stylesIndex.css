@@ -109,7 +109,7 @@ footer img:hover {
 }
 
 #containerMarketing {
-    margin-top: -5rem;
+    margin-top: -2rem;
 }
 
 #imagem {
@@ -121,4 +121,8 @@ footer img:hover {
 #imagem:hover {
     transform: scale(1.2); 
     box-shadow: 0 5px 15px rgba(29, 17, 17, 0.4);
+}
+
+.txt {
+    width: 75%;
 }
