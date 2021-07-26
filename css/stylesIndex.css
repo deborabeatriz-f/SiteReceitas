@@ -110,6 +110,8 @@ footer img:hover {
 
 #containerMarketing {
     margin-top: -2rem;
+    padding-left: 5rem;
+    /* background-color: tomato; */
 }
 
 #imagem {
@@ -124,5 +126,6 @@ footer img:hover {
 }
 
 .txt {
+    max-width: 70%;
     width: 75%;
 }
