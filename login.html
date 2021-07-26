@@ -1,66 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Página de login">
-  <meta name="author" content="Mateus e Clarissa">
-  <title>Login | </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ailla Freire de Azevedo, Clarissa Farencena Arruda, Débora Beatriz, Dominic Barbosa, Helena Perdigueiro, Matheus Costa, Rafaela Rodrigues, Renata Leal, Vitor Bessoni e contribuidores do Bootstrap">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/stylesLoginContato.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="./css/stylesLoginContato.css">
+
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
+    <title>Login</title>
 </head>
 
 <body class="body">
-  
-  <header>
+    <header>
+        <nav class="navbar navbar-light bg-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div id="colapsedNavbar">
+                <div>
+                    <ul type="none">
+                        <li><a href="./index.html">Home</a></li>
+                        <li></li>
+                        <li></li>
+                        <li><a href="./bebidas.html">Bebidas</a></li>
+                        <li><a href="./cafe.html">Café da Manhã</a></li>
+                        <li><a href="./saladas.html">Saladas</a></li>
+                        <li><a href="./pratosPrincipais.html">Pratos Principais</a></li>
+                        <li><a href="./sobremesas.html">Sobremesas</a></li>
+                        <li><a href="./snaks.html">Snacks</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="./sobreNos.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="card text-center">
-      <div class="card-header">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Receitas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">Sobre nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1">Login</a>
-          </li>
-        </ul>
-      </div>
-      
-    </div>
-  </header>
+    <main class="mainLogin">
+        <form class="formLogin">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="nome@email.com"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">SENHA</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="flex">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">MANTENHA-ME CONECTADO</label>
+                </div>
+            </div>
+            <div class="flex">
+                <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
 
-  <main class="mainLogin">
-    <!-- Formulário -->
-     <form class="formLogin">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="nome@email.com"
-          aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Mantenha-me conectado</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-      
-    </form>
-    
-  </main>
-
+    <footer>
+        <div id="logo">
+            <p>Receitas Vegetarianas</p>
+            <img src="./imgs/logo.png" alt="Marca do Receitas Veganas. Duas folhas verdes com um coração vermelho surgindo entre elas, como uma rosa.">
+        </div>    
+    </footer>
 </body>
-
-</html>
