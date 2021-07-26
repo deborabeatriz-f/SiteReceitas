@@ -1,0 +1,16 @@
+body {
+    background-image: url(https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-color: rgba(255, 255, 255, 0.459);
+    background-blend-mode: lighten;
+}
+
+.container-fluid {
+    padding: 20px;    
+    background-color:white;
+    border-radius: 0.4em;
+    margin: 6rem;
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+    box-shadow:  -1px 10px 9px -1px rgba(0,0,0,0.6);
+}
