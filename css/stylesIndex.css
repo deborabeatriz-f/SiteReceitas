@@ -24,7 +24,7 @@ nav {
 }
 
 .navbar-toggler:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .navbar-toggler:active {
@@ -49,14 +49,17 @@ ul li a {
     color: rgb(55, 55, 55);
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: color 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 ul li a:hover {
     color: rgb(55, 55, 55);
     border-bottom: 2px solid rgb(114, 114, 114);
-    opacity: 0.8;
+    opacity: 0.7;
+}
+
+ul li a:active {
+    transform: scale(0.9);
 }
 
 main {
@@ -77,33 +80,82 @@ main {
     margin-bottom: 10rem;
 }
 
-#footer {
+footer {
+    height: 6.5rem;
+}
+
+#seta {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    bottom: 2rem;
+    left: 3rem;
+    height: 2.5rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+#seta:hover {
+    opacity: 0.7;
+}
+
+#seta:active {
+    transform: scale(0.9);
+}
+
+#seta a {
+    display: flex;
+    flex-direction: row;
+    color: transparent;
+    text-decoration: transparent;
+    transition: color 0.5s ease-in-out;
+}
+
+#seta a:hover {
+    color: rgb(160, 160, 160);
+}
+
+#seta img {
+    height: 1.5rem;
+}
+
+#seta p {
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+#logo {
     position: fixed;
     bottom: 2rem;
     right: 3rem;
     display: flex;
     color: transparent;
+    font-weight: bold;
     transition: all 0.5s ease-in-out;
+    transition: color 0.8s ease-in-out;
     background-color: transparent;
 }
 
-footer p {
+#logo p {
     margin-bottom: 0;
-    margin-right: 1rem;
-    align-self: flex-end;
+    margin-right: 0.5rem;
+    margin-top: 0.3rem;
+    align-self: center;
 }
 
-footer:hover {
-    color: gray;
+#logo:hover {
+    color: rgb(114, 114, 114);
 }
 
-footer img {
+#logo img {
     width: 2.5rem;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: all 0.5s ease-in-out;
 }
 
-footer img:hover {
+#logo img:hover {
     transform: translate(0.25rem, 0.25rem) scale(0.8);
     opacity: 1;
 }
